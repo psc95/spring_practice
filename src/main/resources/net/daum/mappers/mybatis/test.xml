@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="Test"> <!-- Test 매퍼네임스페이스명 지정 -->
+	
+	<!-- 글쓰기 -->
+	<insert id="t_in" parameterType="test">
+	 insert into tbl_test7 (test_no,test_title,test_cont,test_Regdate) values(test_seq7.nextval,#{test_title},
+	 #{test_cont},sysdate)
+	</insert>
+</mapper>
